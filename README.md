@@ -1,8 +1,10 @@
 A simple flash card utility
+---------------------------
 
 Only arg is filename
 
 File structure:
+---------------
 
 >n (num of cards)
 
@@ -22,6 +24,7 @@ File structure:
 >string nb
 
 Example:
+--------
 
 >3
 
