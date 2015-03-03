@@ -8,10 +8,9 @@ File structure:
 
 >n (num of cards)
 
->string 1a
+>string 1a (front of card)
 
-
->string 1b
+>string 1b (back of card)
 
 >string 2a
 
