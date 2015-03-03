@@ -4,6 +4,7 @@
 struct card{
 	std::string front;
 	std::string back;
+	bool correct;
 };
 
 int main(int argc, char *argv[]){
@@ -29,11 +30,19 @@ int main(int argc, char *argv[]){
 			if (input == cards[i].back){
 				std::cout << "Correct. +1 point" << '\n';
 				points++;
-			}
+				cards[i].correct = true;
+			}	
 			else{
 				std::cout << "Incorrect. Answer was " << cards[i].back << '\n';
+				cards[i].correct = false;
 			}
 		}
 		std::cout << "Your total score was " << points << "/" << n << '\n';
+		std::cout << "Missed cards were: " << '\n';
+		for (int i = 0; i < n; i++){
+			if (!cards[i].correct){
+				std::cout << cards[i].front << '\n';
+			}
+		}
 	}
 }
