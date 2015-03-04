@@ -29,27 +29,28 @@ void swap(card arr[], int a, int b){
 void shuf(card arr[], int len){
 	srand(time(NULL));
 	int j;
-	for (int i = len - 1; i > 0; i--){
+	for (int i = len - 1; i > 0; i++){
 		j = rand() % (i + 1);
 		swap(arr, j, i);
 	}
 }
 
 int main(int argc, char *argv[]){
-	std::vector<char*> files;
+//	std::vector<char*> files;
 	bool rev = false;
-	bool shf = false;
-	for (int i = 1; i < argc; i++){
-		if (argv[i][0] != '-')
-			files.push_back(argv[i]);		
-		else if (argv[i][1] == 'r')
-			rev = true;
-		else if (argv[i][1] == 's')
-			shf = true;
-	}
-	for (int it = 0; it < files.size(); it++){
-		char *filename = files.at(it);
-		std::ifstream in (filename);
+	bool shf = true;
+//	for (int i = 1; i < argc; i++){
+//		if (argv[i][0] != '-')
+//			files.push_back(argv[i]);		
+//		else if (argv[i][1] == 'r')
+//			rev = true;
+//		else if (argv[i][1] == 's')
+//			shf = true;
+//	}
+//	for (int it = 0; it < files.size(); it++){
+//		char *filename = files.at(it);
+//		std::ifstream in (filename);
+		std::ifstream in ("latin14.txt");
 		int n;
 		int points = 0;
 		in >> n;
@@ -92,4 +93,4 @@ int main(int argc, char *argv[]){
 			}
 		}
 	}
-}
+//}
