@@ -2,8 +2,11 @@ A simple flash card utility
 ---------------------------
 
 Args:
+
 filename
+
 -r: reverse cards
+
 -s: shuffle cards
 
 File structure:
