@@ -1,7 +1,10 @@
 A simple flash card utility
 ---------------------------
 
-Only arg is filename
+Args:
+filename
+-r: reverse cards
+-s: shuffle cards
 
 File structure:
 ---------------
